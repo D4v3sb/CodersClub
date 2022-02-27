@@ -43,26 +43,26 @@ function type() {
   }, 250);
 }
 
-function time() {
-  let dias, horas, minutos, segundos;
-  setInterval(() => {
-    let now = new Date().getTime();
+// Tava travando, então comentei o código, mas tá aí se quiser :)
 
-    segundos = parseInt((futureDate - now) / 1000);
+// function time() {
+//   let dias, horas, minutos, segundos;
+//   setInterval(() => {
+//     let now = new Date().getTime();
 
-    dias = parseInt(segundos / 86400);
-    segundos = segundos % 86400;
+//     segundos = parseInt((futureDate - now) / 1000);
 
-    horas = parseInt(segundos / 3600);
-    segundos = segundos % 3600;
+//     dias = parseInt(segundos / 86400);
+//     segundos = segundos % 86400;
 
-    minutos = parseInt(segundos / 60);
-    segundos = segundos % 60;
+//     horas = parseInt(segundos / 3600);
+//     segundos = segundos % 3600;
 
-    timeLeft.innerHTML = `${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos`;
-  }, 1000);
-}
+//     minutos = parseInt(segundos / 60);
+//     segundos = segundos % 60;
 
-time();
+//     timeLeft.innerHTML = `${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos`;
+//   }, 1000);
+// }
 
 document.addEventListener("DOMContentLoaded", type);
